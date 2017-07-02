@@ -1,0 +1,28 @@
+---
+title: "A Plotly Demonstration"
+author: "Jack Welch"
+date: "July 2, 2017"
+output: html_document
+---
+
+## Introduction
+
+Plotly is a really "kool"" web application and library for R.  Plotly allows us to create and share data visualizations.  Plotly can work with several programming languages including R, Python, MS Excel and more.
+
+## A Plotly Demonstration
+
+```{r, echo=FALSE, message=FALSE}
+library(plotly)
+my_plot <- plot_ly(midwest, x = ~percollege, color = ~state, type = "box")
+
+my_plot
+
+plotly_POST(my_plot, filename = "midwest-boxplots", sharing = "public")
+
+```
+
+## Thank You
+
+brought to you by *KoolWebDezign*!
+
+

@@ -1,0 +1,18 @@
+{
+    "contents" : "---\ntitle: \"A Plotly Demonstration\"\nauthor: \"Jack Welch\"\ndate: \"July 2, 2017\"\noutput: html_document\n---\n\n## Introduction\n\nPlotly is a really \"kool\"\" web application and library for R.  Plotly allows us to create and share data visualizations.  Plotly can work with several programming languages including R, Python, MS Excel and more.\n\n## A Plotly Demonstration\n\n```{r, echo=FALSE, message=FALSE}\nlibrary(plotly)\nmy_plot <- plot_ly(midwest, x = ~percollege, color = ~state, type = \"box\")\n\nmy_plot\n\nplotly_POST(my_plot, filename = \"midwest-boxplots\", sharing = \"public\")\n\n```\n\n## Thank You\n\nbrought to you by *KoolWebDezign*!\n\n\n",
+    "created" : 1499021141959.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "766322162",
+    "id" : "E10E0755",
+    "lastKnownWriteTime" : 1499023724,
+    "path" : "C:/Users/End User/data-products/Plotly-Demo.Rmd",
+    "project_path" : null,
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "type" : "r_markdown"
+}

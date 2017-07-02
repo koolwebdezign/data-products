@@ -1,0 +1,8 @@
+name: Publish Document
+title:
+account: rpubs
+server: rpubs.com
+appId: https://api.rpubs.com/api/v1/document/288734/ed8dccd6c82f48cd9aaf2dd9b83cb0a0
+bundleId: https://api.rpubs.com/api/v1/document/288734/ed8dccd6c82f48cd9aaf2dd9b83cb0a0
+url: http://rpubs.com/koolwebdezign/288734
+when: 1499023156.7576
