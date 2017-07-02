@@ -1,0 +1,18 @@
+{
+    "contents" : "---\ntitle: \"My Plotly Presentation\"\nauthor: \"Jack Welch\"\ndate: \"July 2, 2017\"\noutput:\n   ioslides_presentation: \n      css: my.css\n---\n\n```{r setup, include=FALSE}\nknitr::opts_chunk$set(echo=FALSE)\n```\n\n## Introduction\n\nPlotly is a really \"kool\"\" web application and library for R.  Plotly allows us to create and share data visualizations.  Plotly can work with several programming languages including R, Python, MS Excel and more.\n\n## My Plotly Presentation\n\n```{r, echo=FALSE, message=FALSE}\nlibrary(plotly)\ndata(mtcars)\nmy_chart <- plot_ly(mtcars, x = mtcars$wt, y = mtcars$mpg, mode = \"markers\")\nmy_chart\n\n```\n\n\n## Thank You\n\nbrought to you by *KoolWebDezign*!\n\n",
+    "created" : 1499016215795.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1804715614",
+    "id" : "18BCA3AA",
+    "lastKnownWriteTime" : 1499017543,
+    "path" : "C:/Users/End User/data-products/My_Plotly_Presentation.Rmd",
+    "project_path" : null,
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "type" : "r_markdown"
+}

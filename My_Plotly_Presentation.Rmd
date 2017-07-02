@@ -1,0 +1,32 @@
+---
+title: "My Plotly Presentation"
+author: "Jack Welch"
+date: "July 2, 2017"
+output:
+   ioslides_presentation: 
+      css: my.css
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo=FALSE)
+```
+
+## Introduction
+
+Plotly is a really "kool"" web application and library for R.  Plotly allows us to create and share data visualizations.  Plotly can work with several programming languages including R, Python, MS Excel and more.
+
+## My Plotly Presentation
+
+```{r, echo=FALSE, message=FALSE}
+library(plotly)
+data(mtcars)
+my_chart <- plot_ly(mtcars, x = mtcars$wt, y = mtcars$mpg, mode = "markers")
+my_chart
+
+```
+
+
+## Thank You
+
+brought to you by *KoolWebDezign*!
+
