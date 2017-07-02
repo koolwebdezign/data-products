@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+<meta name="author" content="Jack Welch" />
+
+
+<title>My Leaflet Example</title>
+
+<script src="My_Leaflet_Example_files/jquery-1.12.4/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="My_Leaflet_Example_files/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="My_Leaflet_Example_files/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="My_Leaflet_Example_files/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="My_Leaflet_Example_files/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="My_Leaflet_Example_files/navigation-1.1/tabsets.js"></script>
+<link href="My_Leaflet_Example_files/highlightjs-1.1/default.css" rel="stylesheet" />
+<script src="My_Leaflet_Example_files/highlightjs-1.1/highlight.js"></script>
+<script src="My_Leaflet_Example_files/htmlwidgets-0.8/htmlwidgets.js"></script>
+<link href="My_Leaflet_Example_files/leaflet-0.7.7/leaflet.css" rel="stylesheet" />
+<script src="My_Leaflet_Example_files/leaflet-0.7.7/leaflet.js"></script>
+<link href="My_Leaflet_Example_files/leafletfix-1.0.0/leafletfix.css" rel="stylesheet" />
+<link href="My_Leaflet_Example_files/leaflet-label-0.2.2/leaflet.label.css" rel="stylesheet" />
+<script src="My_Leaflet_Example_files/leaflet-label-0.2.2/leaflet.label.js"></script>
+<script src="My_Leaflet_Example_files/Proj4Leaflet-0.7.2/proj4-compressed.js"></script>
+<script src="My_Leaflet_Example_files/Proj4Leaflet-0.7.2/proj4leaflet.js"></script>
+<script src="My_Leaflet_Example_files/leaflet-binding-1.1.0/leaflet.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs && document.readyState && document.readyState === "complete") {
+   window.setTimeout(function() {
+      hljs.initHighlighting();
+   }, 0);
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">My Leaflet Example</h1>
+<h4 class="author"><em>Jack Welch</em></h4>
+<h4 class="date"><em>July 2, 2017</em></h4>
+
+</div>
+
+
+<div id="bridgewater-state-university" class="section level2">
+<h2>Bridgewater State University</h2>
+<div id="htmlwidget-8c306239b4e5f0e0193b" style="width:672px;height:480px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-8c306239b4e5f0e0193b">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"maxNativeZoom":null,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"continuousWorld":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":null,"unloadInvisibleTiles":null,"updateWhenIdle":null,"detectRetina":false,"reuseTiles":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addMarkers","args":[41.987,-70.9746,null,null,null,{"clickable":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"Hello BSU World!",null,null,null,null,null,null]}],"setView":[[41.987,-70.9746],17,[]],"limits":{"lat":[41.987,41.987],"lng":[-70.9746,-70.9746]}},"evals":[],"jsHooks":[]}</script>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

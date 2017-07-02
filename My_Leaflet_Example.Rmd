@@ -1,0 +1,31 @@
+---
+title: "My Leaflet Example"
+author: "Jack Welch"
+date: "July 2, 2017"
+output: 
+  html_document:
+    self_contained: no
+---
+
+## Bridgewater State University
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+library(leaflet)
+
+# The following notes were extracted from Coursera
+# This series of code is the same as the piping notation below
+# my_map = leaflet()
+# my_map = addTiles(my_map)
+
+# Piping notation for code sample above
+# my_map <- leaflet() %>% addTiles()
+
+# Create my map with setView() in order to set map center and zoom level
+my_map <- leaflet() %>% addTiles() %>% setView(-70.9746, 41.9870, zoom = 17) %>% addMarkers(-70.9746, 41.9870, popup="Hello BSU World!")
+
+
+
+# Output the map
+my_map
+
+```
