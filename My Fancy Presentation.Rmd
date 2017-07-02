@@ -52,7 +52,7 @@ library(stats)
 plot(mtcars$wt, mtcars$mpg, xlab="Weight", ylab="MPG")
 ```
 
-## My notes for GH PAGES
+## My notes for publishing with GH-PAGES
 
 ### Simple way to preview HTML pages on GitHub
 
