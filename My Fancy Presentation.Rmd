@@ -2,7 +2,9 @@
 title: "My Fancy Presentation"
 author: "Jack Welch"
 date: "July 2, 2017"
-output: ioslides_presentation
+output:
+   ioslides_presentation: 
+      css: my.css
 ---
 
 ```{r setup, include=FALSE}
@@ -49,3 +51,17 @@ plot(cars)
 library(stats)
 plot(mtcars$wt, mtcars$mpg, xlab="Weight", ylab="MPG")
 ```
+
+## My notes for GH PAGES
+
+### Simple way to preview HTML pages on GitHub
+
+Prepend the URL to the raw HTML page with:
+http://htmlpreview.github.com/?
+
+### Use gh-pages branch
+
+git checkout --orphan gh-pages
+
+git push -u origin gh-pages
+
