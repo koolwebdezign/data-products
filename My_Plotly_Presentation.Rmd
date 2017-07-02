@@ -15,12 +15,11 @@ knitr::opts_chunk$set(echo=FALSE)
 
 Plotly is a really "kool"" web application and library for R.  Plotly allows us to create and share data visualizations.  Plotly can work with several programming languages including R, Python, MS Excel and more.
 
-## My Plotly Presentation
+## MTCARS: MPG vs Vehicle Weight
 
 ```{r, echo=FALSE, message=FALSE}
 library(plotly)
-my_chart <- plot_ly(mtcars, x = mtcars$wt, y = mtcars$mpg, mode = "markers")
-my_chart
+plot_ly(mtcars, x = mtcars$wt, y = mtcars$mpg, mode = "markers")
 
 ```
 
