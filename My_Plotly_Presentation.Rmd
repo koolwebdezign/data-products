@@ -19,7 +19,6 @@ Plotly is a really "kool"" web application and library for R.  Plotly allows us 
 
 ```{r, echo=FALSE, message=FALSE}
 library(plotly)
-data(mtcars)
 my_chart <- plot_ly(mtcars, x = mtcars$wt, y = mtcars$mpg, mode = "markers")
 my_chart
 
