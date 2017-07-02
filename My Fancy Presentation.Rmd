@@ -57,11 +57,15 @@ plot(mtcars$wt, mtcars$mpg, xlab="Weight", ylab="MPG")
 ### Simple way to preview HTML pages on GitHub
 
 Prepend the URL to the raw HTML page with:
-http://htmlpreview.github.com/?
+'http://htmlpreview.github.com/?https://github.com/koolwebdezign/data-products/blob/gh-pages/My_Fancy_Presentation.html'
 
 ### Use gh-pages branch
 
-git checkout --orphan gh-pages
+* git checkout --orphan gh-pages
+* git push -u origin gh-pages
+* delete the master branch
 
-git push -u origin gh-pages
+Prepend the URL with the RAW HTML:
+'https://koolwebdezign.github.io/data-products/My_Fancy_Presentation.html'
+
 
